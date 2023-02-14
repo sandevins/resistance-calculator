@@ -1,3 +1,5 @@
+#![allow(clippy::pedantic)]
+
 use enum_iterator::IntoEnumIterator;
 use int_enum::IntEnum;
 use std::env;
@@ -23,7 +25,7 @@ impl std::str::FromStr for ResistorColor {
     type Err = String;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
-        let value: &str = &s.clone().to_lowercase();
+        let value: &str = &s.to_lowercase();
         match value {
             "black" => Ok(ResistorColor::Black),
             "brown" => Ok(ResistorColor::Brown),
