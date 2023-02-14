@@ -1,0 +1,11 @@
+[package]
+name = "resistor_color"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+int-enum = "0.4.0"
+enum-iterator = "0.7.0"
+human_format = "1.0.2"
